@@ -135,4 +135,4 @@ File name whitelist:
 1. The `IsSensitiveFileName()` function checks the file name against a regular expression that finds sensitive file names. (Such as /etc/shadow, bash_history, etc...)
 
 File contents:
-1. Check the file contents against a set of regular expressions.
+1. The function `checkContentsRegex()` checks the file contents against a set of regular expressions. (The file input argument is line-by-line, so the input to this function is one line of a file, not the whole file.) So to look for keywords related to your organization, just change up the regular expressions inside `checkContentsRegex()`.
