@@ -39,6 +39,7 @@ sudo apt install make golang-go git
 go get -u github.com/aws/aws-sdk-go
 go get -u github.com/deckarep/golang-set
 go get -u github.com/lib/pq
+go get -u lukechampine.com/blake3
 ```
 
 3. Then build the EB app into a zip file with:
